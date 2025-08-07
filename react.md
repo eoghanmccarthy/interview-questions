@@ -17,7 +17,13 @@ const TodoList = () => {
   return (
     <ul>
       {todos.map(todo => (
-        <li key={todo.id} onClick={() => toggleTodo(todo.id)}>
+        <li
+            key={todo.id}
+            onClick={() => toggleTodo(todo.id)}
+            style={{
+                textDecoration: todo.completed ? 'line-through' : 'none'
+            }}
+        >
           {todo.text}
         </li>
       ))}
@@ -131,7 +137,7 @@ const TodoItem = ({ todo, onToggle, onDelete }) => {
       >
         {todo.text}
       </span>
-      <button onClick={onDelete(todo.id)}>Delete</button>  // Same bug
+      <button onClick={onDelete(todo.id)}>Delete</button>
     </div>
   );
 };
