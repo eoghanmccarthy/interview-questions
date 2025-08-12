@@ -1,6 +1,6 @@
 # Interview Questions with Tests
 
-This project contains React and JavaScript interview questions with failing tests. The goal is to show candidates failing tests and ask them to fix the code to make the tests pass.
+This project contains React interview questions with failing tests. The goal is to show candidates failing tests and ask them to fix the code to make the tests pass.
 
 ## Setup
 
@@ -24,13 +24,6 @@ npm run test:watch
 npm test snippet1
 ```
 
-## Interview Flow
-
-1. **Show the failing test** - Run the test to show it's failing
-2. **Show the buggy code** - Let candidate examine the component
-3. **Ask them to fix it** - "Make this test pass by fixing the component"
-4. **Verify the fix** - Run the test again to confirm it passes
-
 ## Project Structure
 
 ```
@@ -42,25 +35,5 @@ npm test snippet1
 │   ├── snippet1.test.js  # Todo toggle bug
 │   ├── snippet2.test.js  # useEffect dependencies
 │   └── ...
-├── react.md              # React interview questions (reference)
-└── js.md                 # JavaScript interview questions (reference)
+└── react.md              # React interview questions (reference)
 ```
-
-## Example Usage
-
-```bash
-# Run snippet 1 test (will fail)
-npm test snippet1
-
-# Expected output:
-# FAIL snippets/snippet1.test.js
-# ✕ should toggle todo completed status when clicked
-
-# Show candidate the failing test and the component code
-# Ask them to fix the TodoList component
-# Re-run test to verify fix
-```
-
-## Current Snippets
-
-- **Snippet 1**: Todo toggle state mutation bug
